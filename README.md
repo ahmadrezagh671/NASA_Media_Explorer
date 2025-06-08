@@ -1,5 +1,8 @@
 # NASA Media Explorer
 
+
+> :warning: **Note:** This app is currently in active development and is expected to be released in a couple of weeks. Stay tuned for updates!
+
 NASA Media Explorer is an open-source Android application that allows users to explore NASA's vast Image, Video, and Audio Library in a user-friendly interface. The app leverages NASA's public API to provide a seamless experience for discovering and interacting with space-related media content.
 
 ## Features
