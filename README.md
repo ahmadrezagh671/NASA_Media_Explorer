@@ -19,7 +19,7 @@ Below are some screenshots showcasing the app's interface:
 
 | ![Screenshot 1](Screenshots/01.png) | ![Screenshot 2](Screenshots/02.png) | ![Screenshot 3](Screenshots/03.png) |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| ![Screenshot 4](Screenshots/04.png) | ![Screenshot 5](Screenshots/05.png) | ![Screenshot 6](Screenshots/06.png) |
+| ![Screenshot 4](Screenshots/07.png) | ![Screenshot 5](Screenshots/05.png) | ![Screenshot 6](Screenshots/06.png) |
 
 ## Dependencies
 The app uses the following libraries:
