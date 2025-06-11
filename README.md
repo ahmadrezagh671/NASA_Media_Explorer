@@ -17,9 +17,9 @@ NASA Media Explorer is an open-source Android application that allows users to e
 ## Screenshots
 Below are some screenshots showcasing the app's interface:
 
-| ![Screenshot 1](Screenshots/01.png) | ![Screenshot 2](Screenshots/02.png) | ![Screenshot 3](Screenshots/03.png) |
-|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| ![Screenshot 4](Screenshots/08.png) | ![Screenshot 5](Screenshots/05.png) | ![Screenshot 6](Screenshots/06.png) |
+| ![Screenshot 1](Screenshots/11.png) | ![Screenshot 2](Screenshots/02.png) | ![Screenshot 3](Screenshots/09.png) | ![Screenshot 7](Screenshots/10.png) |
+|-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
+| ![Screenshot 4](Screenshots/12.png) | ![Screenshot 5](Screenshots/05.png) | ![Screenshot 6](Screenshots/06.png) | ![Screenshot 8](Screenshots/13.png) |
 
 ## Dependencies
 The app uses the following libraries:
