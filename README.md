@@ -42,7 +42,7 @@ The app uses the following libraries:
 ## Installation
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/.....
+   git clone https://github.com/ahmadrezagh671/NASA_Media_Explorer.git
    ```
 2. **Open in Android Studio**:
    - Open Android Studio and select `Open an existing project`.
