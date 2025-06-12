@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primaryColor">#F4F4F4</color>
+    <color name="notPrimaryColor">#9ca3af</color>
+    <color name="secondaryColor">#8887DB</color>
+    <color name="secondaryColor2">#92BDD0</color>
+    <color name="BackgroundColor">#E4E6E7</color>
+    <color name="DarkBackgroundColor">#F4F4F4</color>
+    <color name="LightBackgroundColor">#F4F4F4</color>
+    <color name="dividerColor">#C7C7C7</color>
+
+    <color name="audioPlayerBackground">#303031</color>
+
+    <color name="blue">#5492f7</color>
+    <color name="red">#EF5E5E</color>
+
+    <color name="text_color_white">#EBEBEB</color>
+    <color name="text_color_gray">#474747</color>
+    <color name="text_color_black">#1B1B1B</color>
+
+</resources>

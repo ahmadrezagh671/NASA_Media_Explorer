@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/DarkBackgroundColor"
+        android:padding="24dp"
+        >
+
+        <TextView
+            android:id="@+id/appTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="24sp"
+            android:textColor="@color/text_color_black"
+            android:fontFamily="sans-serif-black"
+            />
+
+        <ImageButton
+            android:id="@+id/optionsIB"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:contentDescription="options"
+            app:layout_constraintTop_toTopOf="@id/appTitleTV"
+            app:layout_constraintBottom_toBottomOf="@id/appTitleTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_3dot_h_menu"
+            app:tint="@color/text_color_black"
+            android:scaleType="centerCrop"
+            android:paddingHorizontal="8dp"
+            android:onClick="optionsIB"
+            />
+
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="Search for images..."
+            android:background="@drawable/shape_border"
+            app:layout_constraintTop_toBottomOf="@id/appTitleTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/text_color_white"
+            android:layout_marginTop="18dp"
+            />
+
+        <LinearLayout
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/filtersLayout"
+            android:layout_marginTop="18dp"
+            app:layout_constraintTop_toBottomOf="@id/searchView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/imageFilterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Image"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:stateListAnimator="@null"
+                android:singleLine="true"
+                android:background="@drawable/shape_border"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/videoFilterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Video"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:layout_marginStart="14dp"
+                android:stateListAnimator="@null"
+                android:singleLine="true"
+                android:background="@drawable/shape_border"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/audioFilterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Audio"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:layout_marginStart="14dp"
+                android:stateListAnimator="@null"
+                android:singleLine="true"
+                android:background="@drawable/shape_border"
+                />
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividerColor"
+        />
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/BackgroundColor"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:id="@+id/errorTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network Error"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/text_color_black"
+            />
+
+        <Button
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:id="@+id/tryAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Try Again"
+            android:elevation="12dp"
+            android:textColor="@color/text_color_black"
+            />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

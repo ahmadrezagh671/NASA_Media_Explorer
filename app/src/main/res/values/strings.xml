@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NASA Media Explorer</string>
+    <string name="aboutUs">
+        NASA Media Explorer App\n\nNASA Media Explorer is a sleek and efficient Android application designed as a user-friendly interface for accessing the NASA API. It offers a seamless, modern, and intuitive experience for discovering and browsing NASA\'s extensive collection of images, videos, and other media.\n\nThis app is an independent, community-driven project and is not officially affiliated with NASA. It was created solely for educational and non-commercial purposes.\n\nDeveloped by Ahmadrezagh671@gmail.com
+    </string>
+    <string name="githubLink">https://github.com/ahmadrezagh671/NASA_Media_Explorer/</string>
+</resources>
